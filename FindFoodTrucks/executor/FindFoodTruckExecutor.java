@@ -4,7 +4,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 /*************************************************
- * Test to find food trucks in an area based on the latitude and longitude
+ * Executor to find food trucks in an area based on the latitude and longitude
  *
  * @author Paridhi Pal
  * 
