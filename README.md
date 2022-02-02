@@ -70,6 +70,19 @@ JAVA classes in the project:
 * FoodTruck - FoodTruck Object Variables and Functions to access these variables.
 * FindFoodTruckExecutor - Executor to find food trucks in an area based on the latitude and longitude.
 
+## Common exceptions captured
+
+The JAR to run successfully requires 3 inputs separated by space (1. latitude 2. longitude and 3. Full CSV file path). 
+
+* Incorrect inputs passed -  In case of any issues with the inputs, it displays a message "Incorrect input. Please pass Latitude, Longitude and CSV_File_Full_Path separated by space."
+* Incorrect CSV File Path - In case of any issues with the file path, it displays a message "Incorrect File Path. Please check the CSV file's full path."
+
+An example of a successful command:
+
+```
+java -jar FindFoodTrucks.jar 37.7865580501799 122.40103337534973 /Users/msuser/Downloads/Mobile_Food_Facility_Permit.csv > output.txt
+```
+
 ## Future scope of enhancements
 
 * Develop a web API (inclined towards REST API). 
