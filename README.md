@@ -2,12 +2,12 @@
 Java program to find food trucks in an area based on latitude and longitude from a CSV file. The output is in JSON format. 
 
 ## Genesis of this project
-A project written in JAVA to find food trucks in an area based on latitude and longitude. The JAR file could be run from the command line and the output is in JSON format.
+A project written in JAVA to find food trucks in an area based on latitude and longitude. The JAR file could be run from the command line and the output is in JSON format. Given JSON is widely used data format, this provides us with the flexibility to consume the output programatically and enhance the project. 
 
 The key components included:
 * A CSV file that lists all the food trucks in San Francisco. It contains food items, name, address, status, latitude and longitude details.
 * A JAR file that would take latitude, longitude and CSV file as parameters and return food trucks in that particular latitude and longitude in JSON format.
-* Source code of the JAVA project, that a) reads from the food trucks CSV file; b) searches for the food trucks based on latitude and longitude and; c) builds and returns JSON of the filtered food trucks.
+* Source code of the JAVA project, that a) reads from the food trucks CSV file; b) searches for the food trucks based on latitude and longitude and; c) builds and returns JSON of the filtered food trucks. 
 
 ## Steps to run the project 
 Prerequiste: JAVA should be installed on the machine.
@@ -63,3 +63,14 @@ An example of the JSON output:
    ]
 }
 ```
+## Source code details
+
+JAVA classes in the project:
+* FindFoodTrucks - Read from and Parse CSV file. CSV file contains food truck details of San Francisco including their locations (latitude and longitude. Find food trucks in an area based on the latitude and longitude details.
+* FoodTruck - FoodTruck Object Variables and Functions to access these variables.
+* FindFoodTruckExecutor - Executor to find food trucks in an area based on the latitude and longitude.
+
+## Future scope of enhancements
+
+* Develop a web API (inclined towards REST API). 
+* Read the CSV file from the online website directly. 
