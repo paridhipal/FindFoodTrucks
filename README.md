@@ -13,6 +13,53 @@ The key components included:
 Prerequiste: JAVA should be installed on the machine.
 
 Steps:
-* Copy the JAR file and CSV file onto your machine.
+* Copy the JAR file 'FindFoodTrucks.jar' and the CSV file 'Mobile_Food_Facility_Permit.csv' onto your machine.
 * Open the command line interface.
-* Run the command.
+* Run the command:
+
+```java -jar FindFoodTrucks.jar <<latitude>> <<longitude>> <<full_path_of_CSV_file>> ```
+* Output will be displayed on the console. The output can also be saved in a text file by running the below command.
+
+``` java -jar FindFoodTrucks.jar <<latitude>> <<longitude>> <<full_path_of_CSV_file>> > output.txt ```
+
+## JSON output details
+The output includes:
+
+* Address
+* LocationID
+* Latitude
+* Location 
+* Description
+* Food Items
+* Longitude
+* Applicant name
+* Status
+
+An example of the JSON output:
+
+```
+{
+   "foodtrucks":[
+      {
+         "address":"667 MISSION ST",
+         "locationID":"1565594",
+         "latitude":"37.7865580501799",
+         "locDes":"MISSION ST: ANNIE ST to 03RD ST (663 - 699)",
+         "foodItems":"Noodles: Meat & Drinks",
+         "longitude":"-122.40103337534973",
+         "applicant":"MOMO INNOVATION LLC",
+         "status":"APPROVED"
+      },
+      {
+         "address":"667 MISSION ST",
+         "locationID":"812018",
+         "latitude":"37.7865580501799",
+         "locDes":"MISSION ST: ANNIE ST to 03RD ST (663 - 699)",
+         "foodItems":"Chicken Tikka Masala: Vegetarian Rice Plate: Burritos: Tacos: Mango Lassi",
+         "longitude":"-122.40103337534973",
+         "applicant":"SF Street Food",
+         "status":"REQUESTED"
+      }
+   ]
+}
+```
