@@ -10,7 +10,7 @@ The key components included:
 * Source code of the JAVA project, that a) reads from the food trucks CSV file; b) searches for the food trucks based on latitude and longitude and; c) builds and returns JSON of the filtered food trucks. 
 
 ## Steps to run the project 
-Prerequiste: JAVA should be installed on the machine.
+Prerequiste: JAVA should be installed on the machine, preferably JDK-17.
 
 Steps:
 * Copy the JAR file 'FindFoodTrucks.jar' and the CSV file 'Mobile_Food_Facility_Permit.csv' onto your machine.
