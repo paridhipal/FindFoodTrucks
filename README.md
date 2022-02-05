@@ -14,8 +14,7 @@ Prerequiste: JAVA should be installed on the machine, preferably JDK-17.
 
 Steps:
 * Copy the JAR file 'FindFoodTrucks.jar' and the CSV file 'Mobile_Food_Facility_Permit.csv' onto your machine.
-* Open the command line interface.
-* Run the command:
+* Open the command line interface and run the below command:
 
 ```java -jar FindFoodTrucks.jar <<latitude>> <<longitude>> <<full_path_of_CSV_file>> ```
 * Output will be displayed on the console. The output can also be saved in a text file by running the below command.
@@ -32,7 +31,7 @@ The output includes:
 * Description
 * Food Items
 * Longitude
-* Applicant name
+* Applicant Name
 * Status
 
 An example of the JSON output:
@@ -66,13 +65,13 @@ An example of the JSON output:
 ## Source code details
 
 JAVA classes in the project:
-* FindFoodTrucks - Read from and Parse CSV file. CSV file contains food truck details of San Francisco including their locations (latitude and longitude. Find food trucks in an area based on the latitude and longitude details.
+* FindFoodTrucks - Read from and Parse the CSV file. CSV file contains food truck details of San Francisco including their locations (latitude and longitude). Find food trucks in an area based on the latitude and longitude details.
 * FoodTruck - FoodTruck Object Variables and Functions to access these variables.
 * FindFoodTruckExecutor - Executor to find food trucks in an area based on the latitude and longitude.
 
 ## Common exceptions captured
 
-The JAR to run successfully requires 3 inputs separated by space (1. latitude 2. longitude and 3. Full CSV file path). 
+The JAR, to run successfully, requires 3 inputs separated by space (1. latitude 2. longitude and 3. Full CSV file path). 
 
 * Incorrect inputs passed -  In case of any issues with the inputs, it displays a message "Incorrect input. Please pass Latitude, Longitude and CSV_File_Full_Path separated by space."
 * Incorrect CSV File Path - In case of any issues with the file path, it displays a message "Incorrect File Path. Please check the CSV file's full path."
@@ -86,4 +85,4 @@ java -jar FindFoodTrucks.jar 37.7865580501799 122.40103337534973 /Users/msuser/D
 ## Future scope of enhancements
 
 * Develop a web API (inclined towards REST API). 
-* Read the CSV file from the online website directly. 
+* Read the CSV file online from the website directly (https://data.sfgov.org/api/views/rqzj-sfat/rows.csv).
